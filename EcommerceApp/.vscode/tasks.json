@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Run Spring Boot Application",
+      "command": "./mvnw spring-boot:run || mvn spring-boot:run",
+      "group": "build",
+      "isBackground": false,
+      "problemMatcher": ["$javac"]
+    }
+  ]
+}

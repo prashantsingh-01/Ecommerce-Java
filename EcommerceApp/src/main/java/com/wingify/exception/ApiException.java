@@ -1,0 +1,4 @@
+package com.wingify.exception;
+public class ApiException extends RuntimeException {
+    public ApiException(String msg) { super(msg); }
+}

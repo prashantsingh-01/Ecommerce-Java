@@ -1,0 +1,28 @@
+### Register
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{ "fullName": "Asha Rao", "email": "asha@example.com", "password": "secret1", "phone": "9999999999" }
+
+### Login
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{ "email": "admin@wingify.com", "password": "admin123" }
+
+### List products
+GET http://localhost:8080/api/products?q=serum&categoryId=1
+
+### Add to cart (replace TOKEN)
+POST http://localhost:8080/api/cart/items
+Authorization: Bearer TOKEN
+Content-Type: application/json
+
+{ "productId": 1, "quantity": 2 }
+
+### Checkout
+POST http://localhost:8080/api/orders/checkout
+Authorization: Bearer TOKEN
+Content-Type: application/json
+
+{ "shippingAddress": "12 MG Road, Mumbai", "paymentMethod": "COD" }
